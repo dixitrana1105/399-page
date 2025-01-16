@@ -123,7 +123,7 @@
 </app-home><!----></app-root>
 <script src="{{ asset('assets/js/runtime.2162b3388ed4c174.js') }}" type="module"></script>
 <script src="{{ asset('assets/js/polyfills.49321badde250171.js') }}" type="module"></script>
-<script src="{{ asset('assets/js/main.57d2f05ec9fae90b.js') }}" type="module"></script>
+{{-- <script src="{{ asset('assets/js/main.57d2f05ec9fae90b.js') }}" type="module"></script> --}}
 
 
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WQY6ED8QKJ"></script>

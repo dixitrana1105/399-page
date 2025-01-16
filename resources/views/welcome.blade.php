@@ -274,21 +274,23 @@
                     <div _ngcontent-cki-c11="" class="dv_we_accept">
                         @include('website.we_accept')
                     </div>
-                    <div _ngcontent-cki-c11="" class="dv_video_black">
-                        <div _ngcontent-cki-c11="" class="container"><video _ngcontent-cki-c11="" preload=""
+                    <div _ngcontent-mro-c11="" class="dv_video_black">
+                        <div _ngcontent-mro-c11="" class="container">
+                            {{-- {{ dd($data[4 ]); }} --}}
+<!--                             <video _ngcontent-mro-c11="" preload=""
                                 autoplay="" muted="" loop="" playsinline="" poster=""
                                 controlslist="nofullscreen" class="display-none-sm"
                                 style="width: 100%; height: auto;">
-                                <source _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/desktop-video.mp4"
+                                <source _ngcontent-mro-c11="" src="{{ $data[4]->video_details->{1}->url }}"
                                     type="video/mp4"> Your browser does not support the video tag.
-                            </video><video _ngcontent-cki-c11="" preload="" autoplay="" muted=""
+                            </video><video _ngcontent-mro-c11="" preload="" autoplay="" muted=""
                                 loop="" playsinline="" poster="" controlslist="nofullscreen"
                                 class="display-block-sm" style="width: 100%; height: auto;">
-                                <source _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/mobile-video.mp4"
+                                <source _ngcontent-mro-c11="" src="{{ $data[4]->video_details->{2}->url }}"
                                     type="video/mp4"> Your browser does not support the video tag.
-                            </video></div>
+                            </video> -->
+                            <iframe width="100%" height="400" src="{{$data[4]->video_details->{1}->url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div _ngcontent-cki-c11="" class="dv_why_package pt-5">
                         @include('website.know_best')

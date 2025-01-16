@@ -1,32 +1,33 @@
 <div _ngcontent-cki-c11="" class="container">
     <div _ngcontent-cki-c11="" class="row">
         <div _ngcontent-cki-c11="" class="col-md-6">
-            <div _ngcontent-cki-c11="" class="dv_mirrors_know_heading"> mirrors <span _ngcontent-cki-c11="">knows best!
+            {{-- {{ dd($data[7]) }} --}}
+            <div _ngcontent-cki-c11="" class="dv_mirrors_know_heading"> {!! $data[7]->text_details[0]->header !!} <span _ngcontent-cki-c11="">{{ $data[7]->text_details[0]->title }}
                 </span></div>
             <ul _ngcontent-cki-c11="" class="dv_mirrors_know_ul">
-                <li _ngcontent-cki-c11=""><span _ngcontent-cki-c11="">1</span>
-                    <h3 _ngcontent-cki-c11="">Innovation </h3> Staying ahead of the curve, we
-                    continuously seek out new techniques and technologies to enhance our
-                    offerings and stay at the forefront of our industry.
+                <li>
+                    <span>{{ 1 }}</span>
+                    <h3>{{ $data[7]->key_value_pair[0]->key }}</h3>
+                    {{ $data[7]->key_value_pair[0]->value }}
                 </li>
-                <li _ngcontent-cki-c11=""><span _ngcontent-cki-c11="">2</span>
-                    <h3 _ngcontent-cki-c11="">Trustworthiness </h3> Clients rely on us as their
-                    go-to experts, knowing they can depend on our expertise, reliability, and
-                    integrity for all their needs.
+                <li>
+                    <span>{{ 2 }}</span>
+                    <h3>{{ $data[7]->key_value_pair[1]->key }}</h3>
+                    {{ $data[7]->key_value_pair[1]->value }}
                 </li>
-                <li _ngcontent-cki-c11=""><span _ngcontent-cki-c11="">3</span>
-                    <h3 _ngcontent-cki-c11="">Customer Satisfaction </h3> Our track record of
-                    happy clients speaks volumes about our commitment to excellence and
-                    exceeding expectations.
+                <li>
+                    <span>{{ 3 }}</span>
+                    <h3>{{ $data[7]->key_value_pair[2]->key }}</h3>
+                    {{ $data[7]->key_value_pair[2]->value }}
                 </li>
             </ul><a _ngcontent-cki-c11=""
-                href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499" target="_blank"
-                class="dv_why_book_now mt-0"> BOOK PACKAGE <span _ngcontent-cki-c11="">399 AED</span></a>
-            <div _ngcontent-cki-c11="" class="dv_dmof_txt">don't miss the offer </div>
+            href="{{ $data[7]->button_details->{1}->redirect_url }}"  target="_blank"
+                class="dv_why_book_now mt-0">{{ $data[7]->button_details->{1}->title }} <span _ngcontent-cki-c11="">{{ $data[7]->button_details->{1}->description }}</span></a>
+            <div _ngcontent-cki-c11="" class="dv_dmof_txt">{!! $data[7]->text_details[0]->extrafield !!} </div>
         </div>
         <div _ngcontent-cki-c11="" class="col-md-2 display-none-sm"></div>
         <div _ngcontent-cki-c11="" class="col-md-4 display-none-sm"><img _ngcontent-cki-c11=""
-                src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/mirror-knwbest-img.jpg"
+                src="{{ $link_project->site_value . $data[7]->image_details->{1}->file_path }}"
                 class="w-100"></div>
     </div>
 </div>

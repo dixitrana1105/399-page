@@ -1,4 +1,8 @@
 <div _ngcontent-cki-c11="" class="dv_slider">
+       @php
+        // dd($data[10]);
+        $index = 0;
+    @endphp
     <div _ngcontent-cki-c11="" class="display-block-sm position-relative"><img _ngcontent-cki-c11=""
             src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/mobile-slider.png" class="w-100"><a
             _ngcontent-cki-c11="" href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
