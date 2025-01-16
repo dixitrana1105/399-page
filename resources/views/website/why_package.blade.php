@@ -27,7 +27,7 @@
             </ul><a _ngcontent-cki-c11=""
             href="{{ $data[1]->button_details->{1}->redirect_url }}" target="_blank"
                 class="dv_why_book_now">{{ $data[1]->button_details->{1}->title }}  <span _ngcontent-cki-c11="">{!! $data[1]->button_details->{1}->description !!}</span></a>
-            <div _ngcontent-cki-c11="" class="dv_dmof_txt">{{ $data[1]->text_details[0]->extrafield }} </div>
+            <div _ngcontent-cki-c11="" class="dv_dmof_txt">{!! $data[1]->text_details[0]->extrafield !!} </div>
         </div>
     </div>
     <div _ngcontent-cki-c11="" class="row display-block-sm">

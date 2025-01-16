@@ -1,7 +1,7 @@
 <div _ngcontent-mro-c11="" class="dv_thousand_review">
     {{-- {{ dd($data[5]) }} --}}
     <div _ngcontent-mro-c11="" class="container">
-        <h4 _ngcontent-mro-c11="" class="dv_thousand_review_head">{{ $data[5]->text_details[0]->header }} </h4>
+        <h4 _ngcontent-mro-c11="" class="dv_thousand_review_head">{!! $data[5]->text_details[0]->header !!} </h4>
         <div _ngcontent-mro-c11="" class="row pt-5 pb-5 display-none-sm">
             <div _ngcontent-mro-c11="" class="col-md-12">
                 <div class="row pt-5 pb-5 display-none-sm">
