@@ -1,256 +1,139 @@
-<div _ngcontent-cki-c11="" class="container">
-    <div _ngcontent-cki-c11="" class="row display-none-sm">
-        <div _ngcontent-cki-c11="" class="col-md-4 col-sm-12 col-xs-12 col-12 mb-4">
-            <div _ngcontent-cki-c11="" class="d-block w-80 ml-auto mr-auto pb-5">
-                <div _ngcontent-cki-c11="" class="p-1 pb-3 border-radius-20"><img _ngcontent-cki-c11=""
-                        src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/1.jpg" class="w-100 mb-4"
-                        style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                    <div _ngcontent-cki-c11="" class="pl-3 pr-3">
-                        <h4 _ngcontent-cki-c11="" class="dv_branch_name">Al Muraqabat </h4>
-                        <p _ngcontent-cki-c11="" class="dv_branch_address">M03 - Buhaleeba
-                            Plaza &nbsp;Muraqabat Road - Dubai. </p><a _ngcontent-cki-c11="" href="tel:97142691449"
-                            target="_blank" class="dv_branch_number">+971 4 269 1449</a><a _ngcontent-cki-c11=""
-                            href="tel:971565373911" target="_blank" class="dv_branch_number">+971 56 537 3911</a><a
-                            _ngcontent-cki-c11="" href="https://wa.me/971565373911" target="_blank"
-                            class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"></a><a
-                            _ngcontent-cki-c11=""
-                            href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                            target="_blank" class="dv_branch_book">book now</a>
+{{-- <div class="container">
+    @php
+        // dd($data[9]);
+        $index = 0;
+    @endphp
+    <h4 class="dv_fre_ask_heading">{!! $data[9]->text_details[0]->header !!}</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+
+                <div class="panel panel-default">
+                    <div role="tab" id="heading1" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false"
+                                aria-controls="collapse1" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[0]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" role="tabpanel" aria-labelledby="heading1" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[0]->value)) ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div _ngcontent-cki-c11="" class="col-md-4 col-sm-12 col-xs-12 col-12 mb-4">
-            <div _ngcontent-cki-c11="" class="d-block w-80 ml-auto mr-auto pb-5">
-                <div _ngcontent-cki-c11="" class="p-1 pb-3 border-radius-20"><img _ngcontent-cki-c11=""
-                        src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/4.jpg" class="w-100 mb-4"
-                        style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                    <div _ngcontent-cki-c11="" class="pl-3 pr-3">
-                        <h4 _ngcontent-cki-c11="" class="dv_branch_name">IBN Battuta </h4>
-                        <p _ngcontent-cki-c11="" class="dv_branch_address">Ibn battuta Mall,
-                            Metro link area - Sheikh Zayed Rd - Dubai </p><a _ngcontent-cki-c11=""
-                            href="tel:97145766288" target="_blank" class="dv_branch_number">+971 4 576 6288</a><a
-                            _ngcontent-cki-c11="" href="tel:971543210758" target="_blank" class="dv_branch_number">+971
-                            54 321 0758</a><a _ngcontent-cki-c11="" href="https://wa.me/971543210758" target="_blank"
-                            class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"></a><a
-                            _ngcontent-cki-c11=""
-                            href="https://www.mirrorsbeautylounge.com/view-cart?location=4&amp;services=2452|499"
-                            target="_blank" class="dv_branch_book">book now</a>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading2" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false"
+                                aria-controls="collapse2" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[1]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" role="tabpanel" aria-labelledby="heading2" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[1]->value)) ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div _ngcontent-cki-c11="" class="col-md-4 col-sm-12 col-xs-12 col-12 mb-4">
-            <div _ngcontent-cki-c11="" class="d-block w-80 ml-auto mr-auto pb-5">
-                <div _ngcontent-cki-c11="" class="p-1 pb-3 border-radius-20"><img _ngcontent-cki-c11=""
-                        src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/6.jpg" class="w-100 mb-4"
-                        style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                    <div _ngcontent-cki-c11="" class="pl-3 pr-3">
-                        <h4 _ngcontent-cki-c11="" class="dv_branch_name">Tecom </h4>
-                        <p _ngcontent-cki-c11="" class="dv_branch_address">API Building,Al
-                            Barsha Heights,Tecom-dubai </p><a _ngcontent-cki-c11="" href="tel:97145686219"
-                            target="_blank" class="dv_branch_number">+971 4 568 6219</a><a _ngcontent-cki-c11=""
-                            href="tel:971502247058" target="_blank" class="dv_branch_number">+971 50 224 7058</a><a
-                            _ngcontent-cki-c11="" href="https://wa.me/971502247058" target="_blank"
-                            class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"></a><a
-                            _ngcontent-cki-c11=""
-                            href="https://www.mirrorsbeautylounge.com/view-cart?location=6&amp;services=2452|499"
-                            target="_blank" class="dv_branch_book">book now</a>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading3" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false"
+                                aria-controls="collapse3" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[2]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" role="tabpanel" aria-labelledby="heading3" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[2]->value)) ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div _ngcontent-cki-c11="" class="col-md-4 col-sm-12 col-xs-12 col-12 mb-4">
-            <div _ngcontent-cki-c11="" class="d-block w-80 ml-auto mr-auto pb-5">
-                <div _ngcontent-cki-c11="" class="p-1 pb-3 border-radius-20"><img _ngcontent-cki-c11=""
-                        src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/8.jpg" class="w-100 mb-4"
-                        style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                    <div _ngcontent-cki-c11="" class="pl-3 pr-3">
-                        <h4 _ngcontent-cki-c11="" class="dv_branch_name">Al Bustan </h4>
-                        <p _ngcontent-cki-c11="" class="dv_branch_address">Al Bustan
-                            center,Al Qusais First-dubai. </p><a _ngcontent-cki-c11="" href="tel:97143797872"
-                            target="_blank" class="dv_branch_number">+971 4 379 7872</a><a _ngcontent-cki-c11=""
-                            href="tel:971505458263" target="_blank" class="dv_branch_number">+971 50 545 8263</a><a
-                            _ngcontent-cki-c11="" href="https://wa.me/971505458263" target="_blank"
-                            class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"></a><a
-                            _ngcontent-cki-c11=""
-                            href="https://www.mirrorsbeautylounge.com/view-cart?location=8&amp;services=2452|499"
-                            target="_blank" class="dv_branch_book">book now</a>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading4" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false"
+                                aria-controls="collapse4" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[3]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" role="tabpanel" aria-labelledby="heading4" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[3]->value)) ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div _ngcontent-cki-c11="" class="col-md-4 col-sm-12 col-xs-12 col-12 mb-4">
-            <div _ngcontent-cki-c11="" class="d-block w-80 ml-auto mr-auto pb-5">
-                <div _ngcontent-cki-c11="" class="p-1 pb-3 border-radius-20"><img _ngcontent-cki-c11=""
-                        src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/9.jpg" class="w-100 mb-4"
-                        style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                    <div _ngcontent-cki-c11="" class="pl-3 pr-3">
-                        <h4 _ngcontent-cki-c11="" class="dv_branch_name">Marina </h4>
-                        <p _ngcontent-cki-c11="" class="dv_branch_address">Jannah Hotel
-                            Apratment,Marina,Dubai. </p><a _ngcontent-cki-c11="" href="tel:97144107691"
-                            target="_blank" class="dv_branch_number">+971 4 410 7691</a><a _ngcontent-cki-c11=""
-                            href="tel:971563005629" target="_blank" class="dv_branch_number">+971 56 300 5629</a><a
-                            _ngcontent-cki-c11="" href="https://wa.me/971563005629" target="_blank"
-                            class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"></a><a
-                            _ngcontent-cki-c11=""
-                            href="https://www.mirrorsbeautylounge.com/view-cart?location=9&amp;services=2452|499"
-                            target="_blank" class="dv_branch_book">book now</a>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading5" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false"
+                                aria-controls="collapse5" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[4]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" role="tabpanel" aria-labelledby="heading5" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[4]->value)) ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div _ngcontent-cki-c11="" class="display-block-sm">
-        <div _ngcontent-cki-c11="" class="swiper branchmobileslider">
-            <swiper _ngcontent-cki-c11=""
-                class="swiper-wrapper swiper swiper-initialized swiper-horizontal swiper-pointer-events">
-                <!----><!----><!---->
-                <div class="swiper-wrapper" style="transition-duration: 0ms;"><!----><!---->
-                    <div data-swiper-slide-index="0" class="dv_per_staff_col swiper-slide">
-                        <!---->
-                        <div _ngcontent-cki-c11="" class="swiper-slide">
-                            <div _ngcontent-cki-c11="" class="w-80 pb-3 border-radius-20 ml-auto mr-auto"><img
-                                    _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/1.jpg"
-                                    class="w-100 mb-4"
-                                    style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                                <div _ngcontent-cki-c11="" class="p-0">
-                                    <h4 _ngcontent-cki-c11="" class="dv_branch_name">Al
-                                        Muraqabat </h4>
-                                    <p _ngcontent-cki-c11="" class="dv_branch_address">M03 -
-                                        Buhaleeba Plaza &nbsp;Muraqabat Road - Dubai. </p><a _ngcontent-cki-c11=""
-                                        href="tel:97142691449" target="_blank" class="dv_branch_number">+971 4 269
-                                        1449</a><a _ngcontent-cki-c11="" href="tel:971565373911" target="_blank"
-                                        class="dv_branch_number">+971 56 537 3911</a><a _ngcontent-cki-c11=""
-                                        href="https://wa.me/971565373911" target="_blank"
-                                        class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                            src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"
-                                            class="d-block ml-auto mr-auto"></a><a _ngcontent-cki-c11=""
-                                        href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                        target="_blank" class="dv_branch_book">book now</a>
-                                </div>
-                            </div>
-                        </div><!----><!----><!---->
+                <div class="panel panel-default">
+                    <div role="tab" id="heading6" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false"
+                                aria-controls="collapse6" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[5]->key) ?>
+                            </a>
+                        </h4>
                     </div>
-                    <div data-swiper-slide-index="1" class="dv_per_staff_col swiper-slide">
-                        <!---->
-                        <div _ngcontent-cki-c11="" class="swiper-slide">
-                            <div _ngcontent-cki-c11="" class="w-80 pb-3 border-radius-20 ml-auto mr-auto"><img
-                                    _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/4.jpg"
-                                    class="w-100 mb-4"
-                                    style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                                <div _ngcontent-cki-c11="" class="p-0">
-                                    <h4 _ngcontent-cki-c11="" class="dv_branch_name">IBN
-                                        Battuta </h4>
-                                    <p _ngcontent-cki-c11="" class="dv_branch_address">Ibn
-                                        battuta Mall, Metro link area - Sheikh Zayed Rd - Dubai
-                                    </p><a _ngcontent-cki-c11="" href="tel:97145766288" target="_blank"
-                                        class="dv_branch_number">+971 4 576
-                                        6288</a><a _ngcontent-cki-c11="" href="tel:971543210758" target="_blank"
-                                        class="dv_branch_number">+971 54 321 0758</a><a _ngcontent-cki-c11=""
-                                        href="https://wa.me/971543210758" target="_blank"
-                                        class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                            src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"
-                                            class="d-block ml-auto mr-auto"></a><a _ngcontent-cki-c11=""
-                                        href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                        target="_blank" class="dv_branch_book">book now</a>
-                                </div>
-                            </div>
-                        </div><!----><!----><!---->
+                    <div id="collapse6" role="tabpanel" aria-labelledby="heading6" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[5]->value)) ?>
+                        </div>
                     </div>
-                    <div data-swiper-slide-index="2" class="dv_per_staff_col swiper-slide">
-                        <!---->
-                        <div _ngcontent-cki-c11="" class="swiper-slide">
-                            <div _ngcontent-cki-c11="" class="w-80 pb-3 border-radius-20 ml-auto mr-auto"><img
-                                    _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/6.jpg"
-                                    class="w-100 mb-4"
-                                    style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                                <div _ngcontent-cki-c11="" class="p-0">
-                                    <h4 _ngcontent-cki-c11="" class="dv_branch_name">Tecom
-                                    </h4>
-                                    <p _ngcontent-cki-c11="" class="dv_branch_address">API
-                                        Building,Al Barsha Heights,Tecom-dubai </p><a _ngcontent-cki-c11=""
-                                        href="tel:97145686219" target="_blank" class="dv_branch_number">+971 4 568
-                                        6219</a><a _ngcontent-cki-c11="" href="tel:971502247058" target="_blank"
-                                        class="dv_branch_number">+971 50 224 7058</a><a _ngcontent-cki-c11=""
-                                        href="https://wa.me/971502247058" target="_blank"
-                                        class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                            src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"
-                                            class="d-block ml-auto mr-auto"></a><a _ngcontent-cki-c11=""
-                                        href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                        target="_blank" class="dv_branch_book">book now</a>
-                                </div>
-                            </div>
-                        </div><!----><!----><!---->
+                </div>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading7" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7"
+                                aria-expanded="false" aria-controls="collapse7" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[6]->key) ?>
+                            </a>
+                        </h4>
                     </div>
-                    <div data-swiper-slide-index="3" class="dv_per_staff_col swiper-slide">
-                        <!---->
-                        <div _ngcontent-cki-c11="" class="swiper-slide">
-                            <div _ngcontent-cki-c11="" class="w-80 pb-3 border-radius-20 ml-auto mr-auto"><img
-                                    _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/8.jpg"
-                                    class="w-100 mb-4"
-                                    style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                                <div _ngcontent-cki-c11="" class="p-0">
-                                    <h4 _ngcontent-cki-c11="" class="dv_branch_name">Al
-                                        Bustan </h4>
-                                    <p _ngcontent-cki-c11="" class="dv_branch_address">Al
-                                        Bustan center,Al Qusais First-dubai. </p><a _ngcontent-cki-c11=""
-                                        href="tel:97143797872" target="_blank" class="dv_branch_number">+971 4 379
-                                        7872</a><a _ngcontent-cki-c11="" href="tel:971505458263" target="_blank"
-                                        class="dv_branch_number">+971 50 545 8263</a><a _ngcontent-cki-c11=""
-                                        href="https://wa.me/971505458263" target="_blank"
-                                        class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                            src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"
-                                            class="d-block ml-auto mr-auto"></a><a _ngcontent-cki-c11=""
-                                        href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                        target="_blank" class="dv_branch_book">book now</a>
-                                </div>
-                            </div>
-                        </div><!----><!----><!---->
+                    <div id="collapse7" role="tabpanel" aria-labelledby="heading7" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[6]->value)) ?>
+                        </div>
                     </div>
-                    <div data-swiper-slide-index="4" class="dv_per_staff_col swiper-slide">
-                        <!---->
-                        <div _ngcontent-cki-c11="" class="swiper-slide">
-                            <div _ngcontent-cki-c11="" class="w-80 pb-3 border-radius-20 ml-auto mr-auto"><img
-                                    _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/9.jpg"
-                                    class="w-100 mb-4"
-                                    style="border-radius: 33px; box-shadow: 1px 1px 16px 2px #00000020 !important;">
-                                <div _ngcontent-cki-c11="" class="p-0">
-                                    <h4 _ngcontent-cki-c11="" class="dv_branch_name">Marina
-                                    </h4>
-                                    <p _ngcontent-cki-c11="" class="dv_branch_address">
-                                        Jannah Hotel Apratment,Marina,Dubai. </p><a _ngcontent-cki-c11=""
-                                        href="tel:97144107691" target="_blank" class="dv_branch_number">+971 4 410
-                                        7691</a><a _ngcontent-cki-c11="" href="tel:971563005629" target="_blank"
-                                        class="dv_branch_number">+971 56 300 5629</a><a _ngcontent-cki-c11=""
-                                        href="https://wa.me/971563005629" target="_blank"
-                                        class="dv_branch_whatsapp"><img _ngcontent-cki-c11=""
-                                            src="https://ik.imagekit.io/mirrorskit/assets/499/img/aed-399-499/whatsapp.png"
-                                            class="d-block ml-auto mr-auto"></a><a _ngcontent-cki-c11=""
-                                        href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                        target="_blank" class="dv_branch_book">book now</a>
-                                </div>
-                            </div>
-                        </div><!----><!----><!---->
-                    </div><!----><!----><!----><!---->
-                </div><!---->
-            </swiper>
-            <div _ngcontent-cki-c11="" class="swiper-button-prev branchmobileslider-p"><img _ngcontent-cki-c11=""
-                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/left-icon.png">
-            </div>
-            <div _ngcontent-cki-c11="" class="swiper-button-next branchmobileslider-n"><img _ngcontent-cki-c11=""
-                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/right-icon.png">
+                </div>
+                <div class="panel panel-default">
+                    <div role="tab" id="heading8" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                aria-expanded="false" aria-controls="collapse8" class="collapsed dv_accodion">
+                                <?= htmlspecialchars($data[9]->key_value_pair[7]->key) ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse8" role="tabpanel" aria-labelledby="heading8" class="panel-collapse collapse">
+                        <div class="panel-body dv_accodion_body">
+                            <?= nl2br(htmlspecialchars($data[9]->key_value_pair[7]->value)) ?>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+<!-- Add Bootstrap and jQuery if they are not included already -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> --}}
