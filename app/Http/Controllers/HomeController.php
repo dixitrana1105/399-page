@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SectionWiseData;
 use DB;
 
 class HomeController extends Controller
 {
-
-
     public function new()
     {
 
@@ -25,7 +22,8 @@ class HomeController extends Controller
             $list->key_value_pair = json_decode($list->key_value_pair);
             $list->main_url = $main_url;
         }
-        dd($data);
+
+        // dd($data);
         return view('welcome', compact('data'));
     }
 }

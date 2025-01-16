@@ -206,48 +206,108 @@
             --swiper-navigation-size: 44px
         }
     </style>
-    <link rel="stylesheet" href="assets/css/styles.a2f233a33eccd281.css" media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="assets/css/styles.a2f233a33eccd281.css" media="print" onload="this.media='all'">
+    <noscript>
         <link rel="stylesheet" href="assets/css/styles.a2f233a33eccd281.css">
     </noscript>
 </head>
 
 <body>
-    <app-root></app-root>
-    <script src="assets/js/runtime.2162b3388ed4c174.js" type="module"></script>
-    <script src="assets/js/polyfills.49321badde250171.js" type="module"></script>
-    <script src="assets/js/main.57d2f05ec9fae90b.js" type="module"></script>
-
-
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WQY6ED8QKJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-WQY6ED8QKJ');
-    </script>&nbsp;
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.icon-tabler-menu-deep').click(function() {
-                $(".dv_navbar_mobile").addClass("display-block-sm");
-            });
-
-            $('.icon-tabler-x').click(function() {
-                $(".dv_navbar_mobile").removeClass("display-block-sm");
-            });
-
-            $('.dv_mobile_menu_a').click(function() {
-                $(".dv_navbar_mobile").removeClass("display-block-sm");
-            });
-        });
-    </script>
-
-</body><!-- Google tag (gtag.js) -->
+    <app-root _nghost-cki-c12="" ng-version="14.3.0"><router-outlet _ngcontent-cki-c12=""></router-outlet><app-home
+            _nghost-cki-c11="">
+            <div _ngcontent-cki-c11="" class="dv_wrapper">
+                <header _ngcontent-cki-c11="">
+                    <nav _ngcontent-cki-c11="" class="navbar navbar-expand-sm bg-dark navbar-dark pt-2 pb-2 fixed-top"
+                        style="background: #000000 !important;">
+                        <div _ngcontent-cki-c11="" class="container"><a _ngcontent-cki-c11="" href="#"
+                                class="navbar-brand"><img _ngcontent-cki-c11=""
+                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/logo.svg"
+                                    class="dv_logo"></a><svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg"
+                                id="dv_mobile_button" width="24" height="24" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icon-tabler-menu-deep">
+                                <path _ngcontent-cki-c11="" stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path _ngcontent-cki-c11="" d="M4 6h16"></path>
+                                <path _ngcontent-cki-c11="" d="M7 12h13"></path>
+                                <path _ngcontent-cki-c11="" d="M10 18h10"></path>
+                            </svg>
+                            <div _ngcontent-cki-c11="" class="justify-content-end dv_navbar_mobile">
+                                <ul _ngcontent-cki-c11="" class="navbar-nav">
+                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
+                                            href="#hairpackage" class="nav-link text-white dv_mobile_menu_a">Hair
+                                            Package</a></li>
+                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
+                                            href="#location" class="nav-link text-white dv_mobile_menu_a">Location</a>
+                                    </li>
+                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
+                                            href="#faq" class="nav-link text-white dv_mobile_menu_a">FAQ's</a></li>
+                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
+                                            href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
+                                            target="_blank" class="nav-link text-white dv_mobile_menu_a">Book
+                                            Appointment</a></li>
+                                </ul><svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icon-tabler-x">
+                                    <path _ngcontent-cki-c11="" stroke="none" d="M0 0h24v24H0z" fill="none">
+                                    </path>
+                                    <path _ngcontent-cki-c11="" d="M18 6l-12 12"></path>
+                                    <path _ngcontent-cki-c11="" d="M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div _ngcontent-cki-c11="" class="dv_content">
+                    <div _ngcontent-cki-c11="" class="dv_slider">
+                        @include('website.Hero')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_why_package">
+                        @include('website.why_package')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_latest_trends">
+                        @include('website.latest_trend')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_price_table">
+                        @include('website.price_table')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_we_accept">
+                        @include('website.we_accept')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_video_black">
+                        <div _ngcontent-cki-c11="" class="container"><video _ngcontent-cki-c11="" preload=""
+                                autoplay="" muted="" loop="" playsinline="" poster=""
+                                controlslist="nofullscreen" class="display-none-sm"
+                                style="width: 100%; height: auto;">
+                                <source _ngcontent-cki-c11=""
+                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/desktop-video.mp4"
+                                    type="video/mp4"> Your browser does not support the video tag.
+                            </video><video _ngcontent-cki-c11="" preload="" autoplay="" muted=""
+                                loop="" playsinline="" poster="" controlslist="nofullscreen"
+                                class="display-block-sm" style="width: 100%; height: auto;">
+                                <source _ngcontent-cki-c11=""
+                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/mobile-video.mp4"
+                                    type="video/mp4"> Your browser does not support the video tag.
+                            </video></div>
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_why_package pt-5">
+                        @include('website.know_best')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_thousand_review">
+                        @include('website.review')
+                    </div>
+                    <div _ngcontent-cki-c11="" class="dv_staff_mirrors bg-light">
+                        @include('website.employee')
+                    </div>
+                    <div _ngcontent-cki-c11="" id="location" class="dv_branch_499">
+                        @include('website.branch')
+                    </div>
+                </div>
+                <div _ngcontent-cki-c11="" id="faq" class="dv_frequrently_asked">
+                    @include('website.ask_que')
+                </div>
+            </div>
+            @include('website.footer_section')
+</body>
 
 </html>
