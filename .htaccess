@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^499hairpackage\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.499hairpackage\.com$
+RewriteRule ^/?$ "https\:\/\/499hairpackage\.com\/" [R=301,L]
+

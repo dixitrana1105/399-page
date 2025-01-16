@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /404/
+Disallow: /error/
+
+Sitemap: https://499hairpackage.com/sitemap.xml
