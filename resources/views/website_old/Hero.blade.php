@@ -19,9 +19,9 @@
             <div _ngcontent-cki-c11="" class="col-lg-4 col-md-5 dv_slider_text">
                 <div _ngcontent-cki-c11="" class="dv_slider_content">
                     <h1 _ngcontent-cki-c11="">{{ $data[0]->text_details[0]->title }} <span _ngcontent-cki-c11="">{{ $data[0]->text_details[0]->extrafield }}</span>
-                        <div _ngcontent-cki-c11="">{{ $data[0]->text_details[0]->header }} <b _ngcontent-cki-c11="" class="dv_any_legnth_txt">{!! $data[0]->text_details[0]->description !!}</b></div>
+                        <div _ngcontent-cki-c11="">{{ $data[0]->text_details[0]->header }} <b _ngcontent-cki-c11="" class="dv_any_legnth_txt">{{ $data[0]->text_details[0]->description }}</b></div>
                     </h1>
-                    <h5 _ngcontent-cki-c11="" class="dv_whatsa_include"> {!! $data[0]->key_value_pair[0]->key !!}</h5>
+                    <h5 _ngcontent-cki-c11="" class="dv_whatsa_include"> <?= htmlspecialchars($data[0]->key_value_pair[0]->key) ?></h5>
                     <p _ngcontent-cki-c11=""><?= nl2br(htmlspecialchars($data[0]->key_value_pair[0]->value)) ?></p>
                     <ul _ngcontent-cki-c11="">
                         <li _ngcontent-cki-c11="">{{ $data[0]->key_value_pair[1]->key }}<span

@@ -19,7 +19,7 @@
                     </div>
                     <div id="collapse1" role="tabpanel" aria-labelledby="heading1" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[0]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[0]->value)) ?>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     </div>
                     <div id="collapse2" role="tabpanel" aria-labelledby="heading2" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[1]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[1]->value)) ?>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     </div>
                     <div id="collapse3" role="tabpanel" aria-labelledby="heading3" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[2]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[2]->value)) ?>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div id="collapse4" role="tabpanel" aria-labelledby="heading4" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[3]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[3]->value)) ?>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     </div>
                     <div id="collapse5" role="tabpanel" aria-labelledby="heading5" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[4]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[4]->value)) ?>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div id="collapse6" role="tabpanel" aria-labelledby="heading6" class="panel-collapse collapse">
                         <div class="panel-body dv_accodion_body">
-                            {!! $data[10]->key_value_pair[5]->value !!}
+                            <?= nl2br(htmlspecialchars($data[10]->key_value_pair[5]->value)) ?>
                         </div>
                     </div>
                 </div>

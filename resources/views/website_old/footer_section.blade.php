@@ -1,11 +1,11 @@
 <footer _ngcontent-cki-c11="">
     <div _ngcontent-cki-c11="" class="container"> © 2018-2025 Mirrors All rights reserved. </div>
 </footer>
-{{-- <ul _ngcontent-cki-c11="" class="dv_sticky_whatsa_livechat">
+<ul _ngcontent-cki-c11="" class="dv_sticky_whatsa_livechat">
     <li _ngcontent-cki-c11=""><a _ngcontent-cki-c11="" href="javascript:void(0);" data-toggle="modal"
             data-target="#locationwhatsapp"><img _ngcontent-cki-c11=""
                 src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a></li>
-</ul> --}}
+</ul>
 <div _ngcontent-cki-c11="" id="locationwhatsapp" role="dialog" class="modal right fade in">
     <div _ngcontent-cki-c11="" class="modal-dialog dv_modal_dialog" style="width: 300px;">
         <div _ngcontent-cki-c11="" class="modal-content dv_modal_content mt-0 rounded-0">

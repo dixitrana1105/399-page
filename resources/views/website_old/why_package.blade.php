@@ -4,7 +4,7 @@
             src="{{ $link_project->site_value . $data[1]->image_details->{1}->file_path }}" class="w-100"></div>
         <div _ngcontent-cki-c11="" class="col-md-1 p-0 display-none-sm"></div>
         <div _ngcontent-cki-c11="" class="col-md-6">
-            <div _ngcontent-cki-c11="" class="dv_why_package_heading"> {{ $data[1]->text_details[0]->header }} <span _ngcontent-cki-c11="">
+            <div _ngcontent-cki-c11="" class="dv_why_package_heading"> {{ $data[1]->text_details[0]->header }} <span _ngcontent-cki-c11="">399
                 {{ $data[1]->text_details[0]->title }}</span></div>
             <p _ngcontent-cki-c11="" class="dv_why_package_heading_p">{{ $data[1]->text_details[0]->description }}</p>
             <ul _ngcontent-cki-c11="" class="dv_why_pack_ul">
