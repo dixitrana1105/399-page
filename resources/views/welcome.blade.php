@@ -115,6 +115,117 @@
                 min-width: 992px !important
             }
         }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 130px;
+            right: 40px;
+            color: #FFF;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }    
+        .my-float {
+            margin-top: 16px;
+        }
+        
+        .modal.right .modal-dialog {
+            position: fixed;
+            right: 0;
+            margin: 0;
+            width: 300px;
+            height: 100%;
+        }
+        .modal.right .modal-content {
+            height: 100%;
+            overflow-y: auto;
+        }
+        .modal.right.fade .modal-dialog {
+            transition: transform 0.3s ease-out;
+            transform: translateX(100%);
+        }
+        .modal.right.fade.in .modal-dialog {
+            transform: translateX(0);
+        }
+        
+        .cls-1 {
+            fill: #fff;
+        }
+        
+        .cls-2 {
+            fill: none;
+            stroke: #565656;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: .86px;
+        }
+        .dv_contact_whatsapp_list
+        {
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+        }
+        
+        .dv_location_contacts
+        {
+            border-bottom: 1px solid #ebebeb;
+            padding: 0 0 10px 0;
+            margin: 0 0 10px 0;
+        }
+        
+        .modal
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            outline: 0;
+        }
+        
+        .fade {
+            transition: opacity .15s linear;
+        }
+        
+        .dv_contact_whatsapp_list>li {
+            margin: 0 0 10px 0;
+            padding: 0;
+            display: block;
+        }
+        
+        .dv_contact_whatsapp_list>li>a {
+            display: block;
+            color: #000000;
+            font-size: 14px;
+        }
+        
+        
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1040;
+        }
+        .modal {
+            z-index: 1050;
+            display: none;
+        }
+        .modal.show {
+            display: block;
+        }
+        
+        .dv_whatsapp {
+            width: 15px !important;
+            height: 15px !important;
+        }       
     </style>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -233,8 +344,7 @@
                             </svg>
                             <div _ngcontent-cki-c11="" class="justify-content-end dv_navbar_mobile">
                                 <ul _ngcontent-cki-c11="" class="navbar-nav">
-                                    {{-- {{ dd($data[12]); }} --}}
-                                    @if (isset($data[12]->button_details) && is_object($data[12]->button_details))
+                                  @if (isset($data[12]->button_details) && is_object($data[12]->button_details))
                                         @foreach ($data[12]->button_details as $button)
                                             <li _ngcontent-cki-c11="" class="nav-item mr-3">
                                                 <a _ngcontent-cki-c11="" href="{{ $button->redirect_url }}"
@@ -245,8 +355,8 @@
                                             </li>
                                         @endforeach
                                     @endif
-
-                                </ul><svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg" width="24"
+                                </ul>
+                                <svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round"
                                     class="icon icon-tabler icon-tabler-x">
@@ -275,27 +385,35 @@
                     <div _ngcontent-cki-c11="" class="dv_we_accept">
                         @include('website.we_accept')
                     </div>
-                    <div _ngcontent-mro-c11="" class="dv_video_black">
-                        <div _ngcontent-mro-c11="" class="container">
-                            {{-- {{ dd($data[4 ]); }} --}}
-                            <!--                             <video _ngcontent-mro-c11="" preload=""
-                                autoplay="" muted="" loop="" playsinline="" poster=""
-                                controlslist="nofullscreen" class="display-none-sm"
-                                style="width: 100%; height: auto;">
-                                <source _ngcontent-mro-c11="" src="{{ $data[4]->video_details->{1}->url }}"
-                                    type="video/mp4"> Your browser does not support the video tag.
-                            </video><video _ngcontent-mro-c11="" preload="" autoplay="" muted=""
-                                loop="" playsinline="" poster="" controlslist="nofullscreen"
-                                class="display-block-sm" style="width: 100%; height: auto;">
-                                <source _ngcontent-mro-c11="" src="{{ $data[4]->video_details->{2}->url }}"
-                                    type="video/mp4"> Your browser does not support the video tag.
-                            </video> -->
-                            <iframe width="100%" height="400" src="{{ $data[4]->video_details->{1}->url }}"
-                                title="YouTube video player" frameborder="0"
+                  <div class="dv_video_black">
+                        <div class="container">
+                            <iframe
+                                class="responsive-video"
+                                src="{{ $data[4]->video_details->{1}->url }}"
+                                title="YouTube video player"
+                                frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
+
+                    <style>
+                    /* Default styles for larger screens */
+                    .responsive-video {
+                        width: 100%;
+                        height: 1000px; /* Adjust as per requirement for large screens */
+                    }
+
+                    /* Styles for mobile view */
+                    @media screen and (max-width: 768px) {
+                        .responsive-video {
+                            width: 21rem;
+                            height: 21rem;
+                        }
+                    }
+                    </style>
                     <div _ngcontent-cki-c11="" class="dv_why_package pt-5">
                         @include('website.know_best')
                     </div>
@@ -314,6 +432,68 @@
                 </div>
             </div>
             @include('website.footer_section')
+
+            <a href="" class="float" data-toggle="modal" data-target="#whatsapp_icon">
+                <img src="/uploadfiles/733585.png" style="width: 50px; height: auto;">
+            </a>
+            <div id="whatsapp_icon" role="dialog" class="modal right fade in">
+                <div class="modal-dialog dv_modal_dialog" style="width: 300px;">
+                    <div class="modal-content dv_modal_content mt-0">
+                        <div class="modal-body dv_modal_body">
+                            <svg data-dismiss="modal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.87 14.87" style="position: absolute; top: -40px; width: 30px; right: 15px;">
+                                
+                                <circle cx="7.43" cy="7.43" r="7.43" class="cls-1"></circle>
+                                <g>
+                                    <line x1="10.02" y1="4.85" x2="4.85" y2="10.02" class="cls-2"></line>
+                                    <line x1="4.85" y1="4.85" x2="10.02" y2="10.02" class="cls-2"></line>
+                                </g>
+                            </svg>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">Al Muraqabat</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 97142691449</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971565373911</a></li>
+                                </ul>
+                            </div>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">Home Service</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 971555235473</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971509540920</a></li>
+                                </ul>
+                            </div>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">IBN Battuta Mall</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 97145766288</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971543210758</a></li>
+                                </ul>
+                            </div>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">TECOM</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 97145686219</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971502247058</a></li>
+                                </ul>
+                            </div>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">Al Bustan</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 97143797872</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971505458263</a></li>
+                                </ul>
+                            </div>
+                            <div class="dv_location_contacts">
+                                <h4 style="text-transform: capitalize; font-size: 16px; font-weight: 600; font-family: OpenSauceOneBold; margin: 0 0 10px 0;">Marina</h4>
+                                <ul class="dv_contact_whatsapp_list">
+                                    <li><a href="" ><img src="/uploadfiles/724664.png" class="dv_whatsapp" > 97144107691</a></li>
+                                    <li><a href="" ><img src="/uploadfiles/733585.png" class="dv_whatsapp" > 971563005629</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>

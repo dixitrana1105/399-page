@@ -1,6 +1,5 @@
 <div _ngcontent-cvn-c11="" class="dv_latest_trends">
     <div _ngcontent-cvn-c11="" class="container">
-        {{-- {{dd($data[11]);}} --}}
         <h3 _ngcontent-cvn-c11="" class="dv_latest_trends_head">{{ $data[11]->text_details[0]->header }} </h3>
         <div _ngcontent-cvn-c11="" class="swiper latesttrends">
             <div class="swiper-wrapper">
