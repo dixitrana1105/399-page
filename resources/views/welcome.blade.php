@@ -221,7 +221,7 @@
                         style="background: #000000 !important;">
                         <div _ngcontent-cki-c11="" class="container"><a _ngcontent-cki-c11="" href="#"
                                 class="navbar-brand"><img _ngcontent-cki-c11=""
-                                    src="https://ik.imagekit.io/mirrorskit/assets/hair/img/aed-399-499/logo.svg"
+                                    src="{{ $link_project->site_value . $data[12]->image_details->{1}->file_path }}"
                                     class="dv_logo"></a><svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg"
                                 id="dv_mobile_button" width="24" height="24" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -233,18 +233,19 @@
                             </svg>
                             <div _ngcontent-cki-c11="" class="justify-content-end dv_navbar_mobile">
                                 <ul _ngcontent-cki-c11="" class="navbar-nav">
-                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
-                                            href="#hairpackage" class="nav-link text-white dv_mobile_menu_a">Hair
-                                            Package</a></li>
-                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
-                                            href="#location" class="nav-link text-white dv_mobile_menu_a">Location</a>
-                                    </li>
-                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
-                                            href="#faq" class="nav-link text-white dv_mobile_menu_a">FAQ's</a></li>
-                                    <li _ngcontent-cki-c11="" class="nav-item mr-3"><a _ngcontent-cki-c11=""
-                                            href="https://www.mirrorsbeautylounge.com/view-cart?location=1&amp;services=2452|499"
-                                            target="_blank" class="nav-link text-white dv_mobile_menu_a">Book
-                                            Appointment</a></li>
+                                    {{-- {{ dd($data[12]); }} --}}
+                                    @if (isset($data[12]->button_details) && is_object($data[12]->button_details))
+                                        @foreach ($data[12]->button_details as $button)
+                                            <li _ngcontent-cki-c11="" class="nav-item mr-3">
+                                                <a _ngcontent-cki-c11="" href="{{ $button->redirect_url }}"
+                                                    class="nav-link text-white dv_mobile_menu_a"
+                                                    target="{{ $loop->last ? '_blank' : '_self' }}">
+                                                    {!! $button->description !!}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    @endif
+
                                 </ul><svg _ngcontent-cki-c11="" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -277,7 +278,7 @@
                     <div _ngcontent-mro-c11="" class="dv_video_black">
                         <div _ngcontent-mro-c11="" class="container">
                             {{-- {{ dd($data[4 ]); }} --}}
-<!--                             <video _ngcontent-mro-c11="" preload=""
+                            <!--                             <video _ngcontent-mro-c11="" preload=""
                                 autoplay="" muted="" loop="" playsinline="" poster=""
                                 controlslist="nofullscreen" class="display-none-sm"
                                 style="width: 100%; height: auto;">
@@ -289,7 +290,10 @@
                                 <source _ngcontent-mro-c11="" src="{{ $data[4]->video_details->{2}->url }}"
                                     type="video/mp4"> Your browser does not support the video tag.
                             </video> -->
-                            <iframe width="100%" height="400" src="{{$data[4]->video_details->{1}->url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="100%" height="400" src="{{ $data[4]->video_details->{1}->url }}"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div _ngcontent-cki-c11="" class="dv_why_package pt-5">

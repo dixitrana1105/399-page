@@ -1,13 +1,13 @@
     <meta charset="utf-8">
-    <title>#1 Best Hair Salon in Dubai | 499AED Hair Package Bestseller Dubai | Top Rated In UAE</title>
+    <title>{!! $data[13]->text_details[0]->title !!}</title>
     <base href="/">
-    <link rel="canonical" href="https://www.499hairpackage.com/">
+    <link rel="canonical" href="{!! $data[13]->text_details[0]->extrafield !!} ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Change Your Hair Look with Mirrors Beauty Lounge. We Provide Top Rated Hair Salon Services. Hair styles, hair color, hair treatments and more. Call &amp; BOok Today! Feels Amazing&nbsp;with&nbsp;new&nbsp;hairs.">
-    <meta name="keywords"
-        content="Best hair salon Dubai, hair salons near me, ladies hair salon in Dubai, women hair salon near me, hairdresser Dubai, best hair cutting salon in Dubai, Best salon for hair color in Dubai, best hair coloring salon for ladies, best hair colorist in Dubai, best hair color salon in Dubai, hair colorists, hair package dubai, hair color deals Dubai, best hair stylist&nbsp;in&nbsp;Dubai">
-    <meta name="google-site-verification" content="I86wB9nL99DEKHxotirriUNAQNFkpXuCdwCFcM5h35o">
+    <meta name="{{ $data[13]->key_value_pair[0]->key }}"
+        content="{{ $data[13]->key_value_pair[0]->value }}">
+    <meta name="{{ $data[13]->key_value_pair[1]->key }}"
+        content="{{ $data[13]->key_value_pair[1]->value }}">
+    <meta name="{{ $data[13]->key_value_pair[2]->key }}" content="{{ $data[13]->key_value_pair[2]->value }}">
     <style>
         :root {
             --blue: #007bff;
